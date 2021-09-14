@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import {GlobalContext} from "../../Context/GlobalState"
+import {Transaction} from "../Transaction/Transaction";
 
 
 export default function TransactionHistory (){
@@ -16,13 +17,7 @@ const transactionType = transactions > 0 ? "plus" : "minus";
         <hr />
         <ul className="list">
             {transactions.map((transaction)=>{
-                    return <li key={transaction.id} className={transactionType}>
-                    <span>{transaction.desc}</span>
-                    <span>${transaction.amount}</span>
-                    <button className="del_Button" onClick={
-                        ()=> delTransaction(transaction.id)
-                    }>X</button>
-                </li>
+                    return <Transaction transaction={transaction} />
             })}
             
         </ul>

@@ -6,8 +6,8 @@ export default function Balance (){
        const transactionAmount = transactions.map(transaction => transaction.amount);
        const balance = transactionAmount.reduce((acc, item) => ( acc += item), 0).toFixed(2);
     return <div>
-        <h3>Current Balance</h3>
-        <h1>$ {balance}</h1>
+        <h4>Current Balance</h4>
+        <h2>$ {balance}</h2>
     </div>
 
 }

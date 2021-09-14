@@ -18,7 +18,7 @@ export default function IncomeEXP(){
             <h4 className="income_section">Income</h4>
             <h5>${income}</h5>
         </div>
-        <div className="middle_line">|</div>
+        {/* <div className="middle_line">|</div> */}
         <div>
             <h4 className="exp_section">Expense</h4>
             <h5>${expence}</h5>
