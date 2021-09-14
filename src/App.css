@@ -1,0 +1,104 @@
+
+body{
+  margin:0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+.container{
+    margin: auto;
+    width: 400px;
+    min-height: 400px;
+    /* -ms-transform: translateX(400px); */
+    /* transform: translateX(auto); */
+    text-align: center;
+    background-color: #f7f7f7;
+
+}
+.main-container{
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  background-color: #f7f7f7;
+
+}
+.income_exp_container{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 3px 3px #888888;
+}
+.exp_section{
+  color:#b6960a;
+  font-weight: 700;
+}
+.income_section{
+  color:#2da3ad;
+  font-weight: 700;
+}
+.list{
+  list-style: none;
+ text-align: center;
+ padding: 0;
+}
+/* .list li{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+} */
+.list li{
+  background-color: #fff;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+.list li.plus {
+  border-right: 5px solid #b6960a;
+}
+
+.list li.plus:hover {
+  border-right: 5px solid #b6960a;
+  background-color: #b6960a;
+  color: #f7f7f7
+}
+.list li.minus {
+  border-right: 5px solid #2da3ad;
+}
+
+.list li.minus:hover {
+  border-right: 5px solid #2da3ad;
+  background-color: #2da3ad;
+  color: #f7f7f7
+}
+label{
+  display: inline-block;
+    margin: 10px 0;
+    font-weight: 700;
+    text-align: left;
+}
+input{
+  padding: 10px 0px;
+  width: 100%;
+}
+.add_Button{
+  background-color: #b0c4de;
+  width: 101%;
+  padding: 5px 10px;
+  font-weight: bold;
+
+}
+.del_Button{
+  position: absolute;
+  right: 400px;
+  padding: 3px;
+  opacity: 0;
+}
+.del_Button:hover{
+  opacity: 1;
+  transition: ease 0.3;
+  cursor: pointer
+}
